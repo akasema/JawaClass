@@ -1,0 +1,15 @@
+package com.Class14;
+
+public class ReplaceDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String longStr= "I am wery happy becouse today is not Monday";
+		
+		String newStr=longStr.replace('w', 'k');
+		
+		System.out.println(newStr);
+	}
+
+}

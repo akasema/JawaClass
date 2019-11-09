@@ -1,0 +1,18 @@
+package review5;
+
+import java.util.Scanner;
+
+public class ArrayWithSacanner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("How many rows and colunms?");
+		int rows=scan.nextInt();
+		int cols=scan.nextInt();
+		System.out.println("Your Array will have "+rows+" and columns "+cols);
+
+	}
+
+}

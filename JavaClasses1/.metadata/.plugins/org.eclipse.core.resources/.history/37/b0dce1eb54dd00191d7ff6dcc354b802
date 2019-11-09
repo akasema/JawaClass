@@ -1,0 +1,12 @@
+package com.secondClass;
+
+public class StringConcatenation {
+	public static void main(String [] args) {
+		
+		String name="Anna";
+		
+		System.out.println("GoodMorning "+name);
+		
+	}
+
+}

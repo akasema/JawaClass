@@ -1,0 +1,24 @@
+package com.Class13;
+
+public class Recap2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str1="Hello";
+		String str2="Hello";//str2 pointing hello in str1
+		
+		System.out.println(str1.contentEquals(str2));
+		System.out.println(str1==str2);
+		
+		System.out.println("================");
+		String str3=new String("Bye");
+		String str4=new String("Bye");//eger boyle olusturursan bu str4 içindeki deðer ayný olsa bile bilgisayar onu yeni olarak alýr 
+		
+		
+		System.out.println(str1.contentEquals(str2));
+		System.out.println(str1==str2);
+
+	}
+
+}

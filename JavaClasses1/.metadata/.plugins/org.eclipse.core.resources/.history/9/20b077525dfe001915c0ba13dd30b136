@@ -1,0 +1,19 @@
+package com.Class14;
+
+public class ToCharArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="Syntax";
+		
+		str.toCharArray();
+		System.out.println(str.toCharArray());
+		char[] array = str.toCharArray();
+		for (char i:array) {
+			System.out.println(i);
+			
+		}
+
+	}
+
+}

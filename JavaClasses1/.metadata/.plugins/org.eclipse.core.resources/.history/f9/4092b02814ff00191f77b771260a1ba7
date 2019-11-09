@@ -1,0 +1,12 @@
+package jawaRewievClasses;
+
+public class Tasks {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String obj = "I LIKE JAVA";
+		System.out.println(obj.charAt(3));
+	}
+
+}

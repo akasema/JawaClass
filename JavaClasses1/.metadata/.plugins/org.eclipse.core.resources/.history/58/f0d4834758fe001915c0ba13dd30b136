@@ -1,0 +1,15 @@
+package com.Class14;
+
+public class StrRecapCont {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// .replace
+		String str="Syntax Technologies";
+		System.out.println(str.replace('y', 'i'));
+		
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.Class13;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	String str="Sunday";
+	
+	for (int i=str.length(); i>=0; i--) {
+		System.out.println(str.charAt(i));
+			}
+	
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.Class13;
+
+public class UseCase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str="12-22-1990";
+		System.out.println(str.replace('-', '/'));
+		System.out.println(str.replace("-", "/"));
+		System.out.println(str.replaceFirst("-", "/"));
+	}
+
+}

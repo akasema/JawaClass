@@ -1,0 +1,15 @@
+package com.Class13;
+
+public class ReplaceMethodString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str="Hello Dear Dan , How are you Dan, nnn dan ?";
+		
+		System.out.println(str.replace('e', 'z'));
+		System.out.println(str.replace("Dear", "respected"));
+		System.out.println(str.replaceFirst("Dan", "Ali"));
+	}
+
+}

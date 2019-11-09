@@ -1,0 +1,17 @@
+package com.secondClass;
+
+public class Task {
+	public static void main(String[] args) {
+		
+		String studentName="Michael";
+		String studentLastname="George";
+		char grade='B';
+		String studentCity="Chantilly";
+		String studentState="VA";
+		Long studentNumber=5712362729l;
+		
+		
+	}
+	
+
+}

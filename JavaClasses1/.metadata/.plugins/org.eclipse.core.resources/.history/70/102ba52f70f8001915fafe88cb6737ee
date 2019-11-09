@@ -1,0 +1,29 @@
+package com.Class11;
+
+public class twoDimArrays {
+	public static void main(String[] args) {
+		
+		int [] [] array=new int[3][4];
+		//1st row 
+		array [0][0]=10;
+		array [0][1]=11;
+		array [0][2]=12;
+		array [0][3]=3;
+		//2nd row
+		//3rd row
+		//4th row
+		
+		//ikinci yazım şekli
+		
+		int [][] numbers= {
+				{8,7,5,3,8},
+				{1,5,6,4,9},
+				{3,6,8,0,7}
+				};
+				System.out.println(numbers[1][4]);
+					
+				}
+		
+	}
+
+

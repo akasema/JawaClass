@@ -1,0 +1,55 @@
+package com.class5;
+
+public class SwitchCase {
+	public static void main(String[] args) {
+		/* 77 weekdays
+		 * 1 monday.. etc
+		 */
+		int day=1;
+		
+		String weekDay;
+		
+		
+		if (day==1) {
+			System.out.println("Monday");
+			
+		}if (day==2) {
+			weekDay="Tuesday";
+			
+		}if (day==3) {
+			System.out.println("Wedn");
+			
+		}if (day==4) {
+			weekDay="Thursday";
+			
+		}if (day==5) {
+		System.out.println("Friday");
+		
+		}if (day==6) {
+		weekDay="Saturday";
+		
+		}if (day==6) {
+			weekDay="Sunday";
+			
+		}else {
+				weekDay="Invalid";
+			}
+		System.out.println(weekDay);
+		int day2=3;
+		
+	 switch(day2){
+	 case 1:
+		 weekDay = "Monday";
+		break;
+	 case 2:
+		 weekDay = "Tuesday";
+		 break;
+	 case 3:
+		 weekDay = "Wedn";
+		 break
+	 }
+	 System.out.println(weekDay);
+		 
+	 }
+	}
+

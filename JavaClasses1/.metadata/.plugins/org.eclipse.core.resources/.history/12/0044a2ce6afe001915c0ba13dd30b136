@@ -1,0 +1,38 @@
+package com.Class14;
+
+public class InterviewQuestions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// qw No1: swap2 variables
+		int a=2;
+		int b=3;
+		b=a;
+		
+		System.out.println("b="+b);
+		String as="Hello";
+		String bs="World";
+		bs=as;
+		System.out.println("bs="+bs);
+		System.out.println("*************************");
+		
+		//qw no: 2; write a java program to find the second largest in array, max, min
+		
+		int [] arr= {2,4,5,7,9};
+		int max=arr[0];
+		int min=arr[0];
+		for (int i=0; i<arr.length; i++) {
+			if (arr[i]>max) {
+				max=arr[i];
+			}
+			if (min<arr[i]) {
+				min=arr[i];
+			}
+			
+		}System.out.println("max is "+max+"min is "+ min);
+
+	}
+	}
+
+

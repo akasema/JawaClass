@@ -1,0 +1,15 @@
+package com.Class10;
+
+public class Exam {
+	public static void main(String[] args)  {
+		 
+		boolean x = true;
+		boolean y = false;
+		if (x || y) {
+		System.out.println(true);
+		} else {
+		System.out.println(false);
+		}
+	}
+
+	}

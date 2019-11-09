@@ -1,0 +1,32 @@
+package com.class5;
+
+import java.util.Scanner;
+
+public class HomeworkAndOr {
+	public static void main(String[] args) {
+		
+		String word1, word2;
+		int num1, num2;
+		
+		Scanner scan=new Scanner(System.in);
+	
+	System.out.println("Please enter Word1");
+	word1 = scan.nextLine();
+	System.out.println("Please enter Word2");
+	word2 = scan.nextLine();
+	
+	System.out.println("Please enter Number1");
+	num1 = scan.nextInt();
+	System.out.println("Please enter Number2");
+	num2 = scan.nextInt();
+	
+	if (word1==word2 || num1==num2) {
+		System.out.println("OR");
+	}else if (word1==word2 && num1==num2) {
+		System.out.println("AD");
+	}
+	
+	
+	}
+
+}

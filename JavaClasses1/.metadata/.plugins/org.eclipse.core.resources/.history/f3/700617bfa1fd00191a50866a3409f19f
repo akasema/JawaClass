@@ -1,0 +1,12 @@
+package com.Class13;
+
+public class ReplaceCaseCont {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="Today is  our java class";
+		System.out.println(str.replace(" ", ""));// boþluðu kaldýrýr
+		
+	}
+
+}

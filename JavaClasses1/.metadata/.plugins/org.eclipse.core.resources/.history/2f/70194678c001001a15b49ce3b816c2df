@@ -1,0 +1,23 @@
+package com.Class15;
+
+public class StringManupulation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//String is a class (String-sequence of characters
+		// Twoo ways of defining 
+		// First literal 
+		String str="Hello";
+		//Second with using new keyword-creating a string object
+		String str1 = new String("Hello");
+		System.out.println(str);
+		//str.(So many method generatedd)
+//1) .length 
+		System.out.println(str.length());
+//2) Case conversion 
+		System.out.println(str.toLowerCase());
+		System.out.println(str.toUpperCase());
+
+	}
+
+}

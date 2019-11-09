@@ -1,0 +1,34 @@
+package com.secondClass;
+
+public class variable {
+	
+	public static void main(String[] args) {
+		String firstName="john";
+		String lastName="doe";
+		String grade="First Class";
+		String city="Vienna";
+		String state="Virginia";
+		String phone="111111";
+		
+		firstName="Kadir";
+		
+		lastName="GOK";
+		grade="SecondClass";
+		city="Brunswick";
+		state="NewJersey";
+		phone="5712362729";
+		
+		System.out.println(firstName);
+		System.out.println(lastName);
+		System.out.println(grade);
+		System.out.println(city);
+		System.out.println(state);
+		System.out.println(phone);
+		
+		
+		
+		
+	
+
+}
+}

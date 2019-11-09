@@ -1,0 +1,18 @@
+package review5;
+
+public class StringManupRecap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="Hello";
+		System.out.println(str.length()+"uzunlugu olcer ");
+		
+		System.out.println(str.toLowerCase()+"hepsi lowercase olsun "); 
+		
+		System.out.println(str.toUpperCase()+"Hepsi buyuk olsun");  
+		
+		
+
+	}
+
+}

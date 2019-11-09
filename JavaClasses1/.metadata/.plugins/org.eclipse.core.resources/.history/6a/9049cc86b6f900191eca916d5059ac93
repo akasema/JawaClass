@@ -1,0 +1,42 @@
+package com.Class12;
+
+public class TwoWayStringDefine {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//there are two ways to create string objects
+	    
+	    //1
+	    //String Literal
+	    String name="john";
+	    System.out.println(name);
+	    System.out.println(name.length());
+	    //2
+	    //creating String with new key word
+	    String name1=new String("john1;");
+	    System.out.println(name1);
+	    
+	    /* this method returns the length of this string
+	     * the length is equal to the number
+	     * of 16 bit unicode characters in the string
+	     */
+	    int name1Len=name.length();
+	    System.out.println("The length of name1Len is= "+name1Len);
+	    String str1="hello world";
+	    System.out.println("before ::" +str1);
+	    str1=str1.toLowerCase();
+	    System.out.println("after ::" +str1);
+//	    equals();
+	    String str2="heLLO wORLd";
+	    boolean isEqual=str1.equals(str2);
+	    System.out.println(isEqual);
+	    //.equalsIgnoreCase();
+	    System.out.println(str1.equalsIgnoreCase(str2));
+	    String str3="Mohammad";
+	    System.out.println("before:: "+str3);
+	    str3=str3.toUpperCase();
+	    System.out.println("after:: "+str3);
+
+	}
+
+}
