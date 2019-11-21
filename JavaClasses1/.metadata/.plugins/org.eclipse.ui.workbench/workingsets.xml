@@ -8,5 +8,10 @@
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569162973445_2" label="Window Working Set" name="Aggregate for window 1569162973445"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569296155597_3" label="Window Working Set" name="Aggregate for window 1569296155597"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569365985716_4" label="Window Working Set" name="Aggregate for window 1569365985716"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1574353716097_6" label="Multiple Working Sets" name="Aggregate:Java Main Sources:Java Test Sources:javaReviewClassV:">
+<workingSet IMemento.internal.id="Java Main Sources"/>
+<workingSet IMemento.internal.id="Java Test Sources"/>
+<workingSet IMemento.internal.id="javaReviewClassV"/>
+</workingSet>
 <mruList name="javaReviewClassV"/>
 </workingSetManager>
