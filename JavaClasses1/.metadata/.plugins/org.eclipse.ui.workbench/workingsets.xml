@@ -4,7 +4,9 @@
 <item elementID="=com.secondClass/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569162971408_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1573695474856_5" label="javaReviewClassV" name="javaReviewClassV"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569162973445_2" label="Window Working Set" name="Aggregate for window 1569162973445"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569296155597_3" label="Window Working Set" name="Aggregate for window 1569296155597"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1569365985716_4" label="Window Working Set" name="Aggregate for window 1569365985716"/>
+<mruList name="javaReviewClassV"/>
 </workingSetManager>

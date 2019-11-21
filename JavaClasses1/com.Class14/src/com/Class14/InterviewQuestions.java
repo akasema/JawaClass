@@ -115,35 +115,38 @@ public class InterviewQuestions {
 //		}
 		
 		String original="kayak";
-		String reversed="";
+		char reversed=' ';
+		char forward=' ';
 		for (int i=original.length()-1; i>=0; i--) {
-			reversed=reversed+original.charAt(i);
-		if (reversed.equals(original)) {
+			reversed=original.charAt(i);
+			forward=original.charAt((original.length())-i);
+		if (reversed==forward) {
 			System.out.println("plaindrome");
 		}else {
 			System.out.println("Not palindrome");
 			
 		} break;
 		}
+		System.out.println("**********");
 //Qw7 write a program to find first 10 prime numbers.
-//		//int [] prm= {1, 2, 3, 5, 8, 13, 21, 34};
-//		int [] prm= {2, 3, 5, 7, 11, 13, 17};
-//		int c=0,a=0;
-//		for (int i=1; i<prm.length-1; i++) {
-//			a=prm[i];
-//			c=prm[i-1];
-//			if (a%c==0) {
-//				System.out.println("Array is not Prime");
-//				break;
-//			}else {
-//				System.out.println("Array is Prime");
-//				break;
-//			}
-//		}
+		//int [] prm= {1, 2, 3, 5, 8, 13, 21, 34};
+		int [] prm= {2, 3, 5, 7, 11, 13, 17};
+		int c1=0,a1=0;
+		for (int i=1; i<prm.length-1; i++) {
+			a1=prm[i];
+			c1=prm[i-1];
+			if (a1%c1==0) {
+				System.out.println("Array is not Prime");
+				break;
+			}else {
+				System.out.println("Array is Prime");
+				break;
+			}
+		}
 //	whether given number is Prime or not 
 		//prime number divisible by itself and by 1;
  
-		
+		System.out.println("**********");
 		
 // qw write a program to print fibonach
 		
