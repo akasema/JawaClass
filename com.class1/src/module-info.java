@@ -1,2 +1,3 @@
-module com.class1 {
+module mymodule {
+	 
 }
