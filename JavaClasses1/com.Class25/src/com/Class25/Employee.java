@@ -1,6 +1,7 @@
 package com.Class25;
 
 public class Employee {
+	protected int employeeId;
 	int salary;
 	static String  companyName;
 	

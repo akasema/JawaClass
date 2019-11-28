@@ -34,8 +34,17 @@ public class Test {
 		tst.getPaid();
 		tst.test();
 		
+		System.out.println("Creating an object of ScrumMaster class");
+		
+		ScrumMaster scrm=new ScrumMaster();
+		scrm.artifacts=" I organize Sprints ";
+		scrm.ceremonies="Scrum Meetings, Sprint organising, Connection Between Employee And Team";
+		scrm.work();
+		scrm.salary=150000;
+		scrm.attendScrumMeetings();
+		
 	}
 	
 	}
 
-}
+
