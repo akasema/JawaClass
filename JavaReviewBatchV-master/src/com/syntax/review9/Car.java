@@ -3,7 +3,15 @@ package com.syntax.review9;
 public class Car {
 	String make;
 	String color;
+	int doors;
+	String model;
 
+	public void setModel(String model) {
+		this.model=model;
+	}
+	public String getModel() {
+		return model;
+	}
 	public Car() {
 
 	}
