@@ -1,6 +1,6 @@
 package com.Homework146;
-
-public class Main {
+import java.util.Scanner;
+//public class Main {
 //	public static void main(String[] args) {
 
 //		A obj1=new A();
@@ -44,6 +44,31 @@ public class Main {
 //	    Main obj=new Main();// Main Class bu þekilde kullanýlýyor
 //	    Main obj1=new Main("Hello"); 
 //	  }
-}
+//		 Parent obj=new Child();
+//		 obj.printInfo();
+//}
+		public class Main {
+//			  public static void main(String[]args){
+//			    Parent obj=new Child();
+//			    obj.method();
+				  
+		  public final void meth(int a, int b){
+				     int sum=a+b;
+				      a=b;
+				      b=sum-b;
+				      System.out.println("a="+a+" and "+"b="+b);
+				        }
+
+				  public static void main(String[]args){
+				    Scanner scan=new Scanner(System.in);
+				    int a=scan.nextInt();
+				    int b=scan.nextInt();
+				    Main c=new Main();
+				    c.meth(a,b);
+				    
+				  }
+				    				  
+			  }
+
 
 

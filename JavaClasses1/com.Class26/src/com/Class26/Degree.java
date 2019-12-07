@@ -6,8 +6,9 @@ public class Degree {
 	}
 	public static void main(String[] args) {
 		UnderGraduate dgr=new UnderGraduate();
-		System.out.println("I am an Undergraduate");
-		dgr.GetDegree();
+//		System.out.println("I am an Undergraduate");
+//		dgr.GetDegree();
+		dgr.gDegree();
 	
 		PostGraduate dgr1=new PostGraduate();
 		System.out.println("I am a Postgraduate");
