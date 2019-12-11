@@ -53,23 +53,19 @@ public class FamiliesDemo {
 		jMember1.firstName = "Lebron";
 		JamesMember.lastName = "James";
 		jMember1.gender = 'M';
-		jMember1.salary = 10000;
-		JamesMember.familyIncome=jMember1.salary+JamesMember.familyIncome;
+		jMember1.salary = 100000;
 
 		JamesMember jMember2 = new JamesMember();
 		jMember2.increment();
 		jMember2.firstName = "Savannah";
 		jMember2.gender = 'F';
 		jMember2.salary = 200;
-		JamesMember.familyIncome=jMember2.salary+JamesMember.familyIncome;
-
 
 		jMember1.memberInfo();
 		jMember2.memberInfo();
 
 		System.out.println("There are " + JamesMember.count + " members in the " + JamesMember.lastName + " family.");
-		System.out.println(JamesMember.lastName+ " Family has " + JamesMember.familyIncome + "$ monthly and " + JamesMember.count + " member/s");
-		
+
 	}
 
 }
