@@ -18,7 +18,7 @@ public class CommonMethods {
 	public static void setUp(String browser, String url){
 		
 		if(browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "drivers/chromeDriver");
+			System.setProperty("webdriver.chrome.driver", "drivers/chromeDriver.exe");
 			driver=new ChromeDriver();
 			driver.get(url);
 		
