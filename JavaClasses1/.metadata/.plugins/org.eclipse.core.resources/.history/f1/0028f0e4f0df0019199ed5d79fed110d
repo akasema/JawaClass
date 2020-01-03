@@ -1,8 +1,0 @@
-package jawaRewievClasses;
-
-public class Rewiev1 {
-	public static void main(String [] args) {
-		System.out.println("HelloWorld");
-	}
-
-}

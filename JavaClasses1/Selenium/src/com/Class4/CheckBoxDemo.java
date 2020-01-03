@@ -1,5 +1,7 @@
 package com.Class4;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -26,6 +28,11 @@ public class CheckBoxDemo extends CommonMethods {
 		System.out.println(maleRadioB.isSelected());
 		maleRadioB.click();
 		System.out.println(maleRadioB.isSelected());
+		
+		List<WebElement> radioButtons =(List<WebElement>) driver.findElement(By.name("optradio"));
+		for (int i=0; i< radioButtons.size(); i++) {
+			
+		}
 		
 		
 		

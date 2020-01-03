@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="com.Class19.Tasks"/>
-<fullyQualifiedTypeName name="com.Class24.ThisWithConstructor"/>
-<fullyQualifiedTypeName name="com.Class26.Bank"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.Util.CommonMethods"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 </qualifiedTypeNameHistroy>
