@@ -1,0 +1,27 @@
+package com.secondClass;
+
+public class StringConcatenation {
+	public static void main(String [] args) {
+		
+		String name="Anna";		
+		System.out.println("Good Morning "+name);
+		
+		int day=22;
+		System.out.println("Today is September " + day);
+		
+		String text="Today is September ";		
+		System.out.println(text + day);
+		int num1=12;
+		int num2=13;
+		System.out.println("The Value Of Nume1=" +num1 +" The Value Of Num2=" + num2);
+		
+		String fruit="Banana";
+		char dollar="!";
+		double price=1,99;
+		
+		System.out.println("The Price of " +fruit+ " is " + dollar + price);
+		
+		
+	}
+
+}

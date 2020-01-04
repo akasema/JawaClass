@@ -10,6 +10,7 @@ import com.Util.CommonMethods;
 public class RecapDropDown extends CommonMethods{
 	public static final String URL="http://166.62.36.207/humanresources/symfony/web/index.php/auth/login";
 		public static void main(String[] args) {
+			
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get(URL);
