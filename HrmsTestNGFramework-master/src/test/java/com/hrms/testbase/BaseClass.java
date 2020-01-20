@@ -14,7 +14,7 @@ public class BaseClass {
 
 	public static WebDriver driver;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void setUp() {
 
 		switch (Constants.BROWSER.toLowerCase()) {
@@ -32,12 +32,12 @@ public class BaseClass {
 		}
 		driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIME, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_LOAD_TIME, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 
 		driver.get(Constants.HRMS_URL);
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void tearDown() {
 		if (driver != null) {
 			driver.quit();

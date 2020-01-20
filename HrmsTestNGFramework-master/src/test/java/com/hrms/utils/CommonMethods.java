@@ -10,6 +10,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -210,5 +211,13 @@ public class CommonMethods extends BaseClass {
 	 */
 	public static void waitForInvisibility(WebElement element) {
 		getWaitObject().until(ExpectedConditions.invisibilityOf(element));
+	}
+	/**
+	 * This method will click on the element
+	 * @param element
+	 */
+	public static void click(WebElement element) {
+		waitForClickability(element);
+		element.click();
 	}
 }
