@@ -1,7 +1,12 @@
 package com.Util;
 
 
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.WebDriver;
@@ -23,18 +28,48 @@ public class CommonMethods {
 		if(browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "drivers/chromeDriver.exe");
 			driver=new ChromeDriver();
-			driver.get(url);
-		
+					
 		}else if(browser.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");
 			driver=new FirefoxDriver();
-			driver.get(url);
+			 
 		}else {
 			System.err.println("Browser not supported");
 		}
-		
+//		driver.manage().window().maximize();
+//		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		
+		driver.get(url);
 	}
-	
+	/**
+	 * This Method finds the number of rows 
+	 * This Method Finds employee in a given table
+	 */
+	public static void findEmployeClick(String url2, String empName) {
+		driver.navigate().to(url2);
+		 List<WebElement> rows=driver.findElements(By.xpath("//table[@id = 'resultTable']/tbody/tr"));
+	     String firstPart="//table[@id = 'resultTable']/tbody/tr[";
+	     String secondPart="]/td[3]";
+	     String thirdPart="]/td[1]";
+	    
+	     int numberOfRows=rows.size();
+	     System.out.println(numberOfRows);
+		
+		 for(int i=1; i<=numberOfRows; i++) {
+	         String namePresent=driver.findElement(By.xpath(firstPart+i+secondPart)).getText();
+	        
+	         if(namePresent.contains(empName)) {
+	        	 System.out.println(namePresent);
+	             driver.findElement(By.xpath(firstPart+i+thirdPart)).click();
+	             System.out.println("Already clicked");
+	             break;
+	         }
+//             else {
+//             System.out.println("Text not present");
+//         }
+     }
+}
 	/**
 	 * This method will accept the alert
 	 * 
@@ -106,7 +141,28 @@ public class CommonMethods {
 			System.out.println("Frame is not Present");
 		}
 	}
+	/**
+	 * JavaScript Methods
+	 * @param element
+	 */
+	public static void jsClick(WebElement element) {
+		JavascriptExecutor js=(JavascriptExecutor)driver;	
+		js.executeScript("arguments[0].click()", element);
+	}
 	
+	public static void scrollIntoElement(WebElement element) {
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", element);		
+	}
+	
+	public static void scrollDown(int pixel) {
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0," +pixel+ ")");		
+	}
+	public static void scrollUp (int pixel) {
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0, -" +pixel+ ")");		
+	}
 	
 //	public static WebDriver setUp(String browser){
 //		

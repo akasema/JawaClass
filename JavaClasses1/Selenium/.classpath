@@ -10,5 +10,6 @@
 	<classpathentry kind="src" path="/com.Class26"/>
 	<classpathentry kind="lib" path="C:/Users/kadir/Documents/jarfiles/Selenium/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="C:/Users/kadir/Documents/jarfiles/Selenium/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kadir/Documents/jarfiles/CommoniO/commons-io-2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

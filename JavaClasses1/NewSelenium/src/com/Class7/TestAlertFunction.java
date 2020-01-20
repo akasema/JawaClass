@@ -1,8 +1,10 @@
 package com.Class7;
-import org.openqa.selenium.Alert;
+
 	import org.openqa.selenium.By;
 
-	import com.utils.CommonMethods;
+import com.Util.CommonMethods;
+
+	
 public class TestAlertFunction extends CommonMethods {
 
 	
@@ -13,7 +15,7 @@ public class TestAlertFunction extends CommonMethods {
 			
 			String alertText=getAlertText();
 			System.out.println(alertText);
-		
+			Thread.sleep(3000);
 			acceptAlert();
 		
 			Thread.sleep(3000);
@@ -21,4 +23,4 @@ public class TestAlertFunction extends CommonMethods {
 		}
 	}
 
-}
+

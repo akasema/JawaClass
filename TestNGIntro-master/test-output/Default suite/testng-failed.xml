@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.reviewclass1.AssertionReviewDemo">
+      <class name="com.class4.HW">
         <methods>
-          <include name="testTwo"/>
+          <include name="test" invocation-numbers="1 2"/>
+          <include name="close"/>
+          <include name="open"/>
         </methods>
-      </class> <!-- com.reviewclass1.AssertionReviewDemo -->
+      </class> <!-- com.class4.HW -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

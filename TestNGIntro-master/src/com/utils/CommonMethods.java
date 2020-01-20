@@ -1,11 +1,16 @@
 package com.utils;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -165,6 +170,24 @@ public class CommonMethods {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0, -" + pixel + ")");
 	}
+	/**
+	 * This method will take a screenshot
+	 * @param fileName
+	 */
+	public static void takeScreenshot(String fileName) {
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File file=ts.getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(file, new File("screenshot/"+fileName+".png"));
+		} catch (IOException e) {
+			System.out.println("Cannot take a screenshot");
+		}
+	}
+	
+	
+	
+	
+	
 
 //	public static WebDriver setUp(String browser){
 //		

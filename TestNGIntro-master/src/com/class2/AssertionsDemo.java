@@ -30,7 +30,7 @@ public class AssertionsDemo extends CommonMethods {
 		Assert.assertTrue(isDisplayed, "Syntax Logo is NOT displayed");
 	}
 
-	@AfterMethod(alwaysRun=true)
+	//@AfterMethod(alwaysRun=true)
 	public void closeBrowser() {
 		driver.quit();
 	}

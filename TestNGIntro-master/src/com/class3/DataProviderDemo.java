@@ -30,12 +30,10 @@ public class DataProviderDemo extends CommonMethods{
 		boolean welcomeDisplayed=driver.findElement(By.id("welcome")).isDisplayed();
 		Assert.assertTrue(welcomeDisplayed, "Welcome element is NOT displayed");
 	}
-	
 	//to create a data provider we need to create a method that will be returning 
 	// Object 2D array
 	@DataProvider
 	public Object[][] getData(){
-		
 		Object[][] data= {
 				{"Admin", "Hum@nhrm123"},
 				{"Syntax", "Syntax123!"},
